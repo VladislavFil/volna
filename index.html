@@ -286,482 +286,6 @@
         </section>
         <section class="section-md">
           <div class="container">
-            <!-- Filtres-->
-            <div class="realty-filtres">
-              <!-- Wrapper-->
-              <div class="realty-filtres__wrapper">
-                <!-- Inner-->
-                <div class="realty-filtres__inner">
-                  <!-- Head - используется на мобилке-->
-                  <div class="realty-filtres__mobile-head">
-                    <div class="realty-filtres__mobile-head-title">Фильтр</div>
-                    <div class="realty-filtres__mobile-head-subtitle"> Выберите способ фильтрации</div>
-                  </div>
-                  <!-- Close - используется на мобилке-->
-                  <div class="realty-filtres__mobile-close"><i class="icon-x-close"></i>
-                  </div>
-                  <!-- Tabs-->
-                  <div class="tab tab--light" data-tabs data-tab-hash>
-                    <div class="tab-buttons" data-tab-buttons>
-                      <div class="tab-button__item" data-tab-opener="flat">
-                        <button class="tab-button" type="button">Квартиры<i class="icon-chevron-right"></i>
-                        </button>
-                      </div>
-                      <div class="tab-button__item" data-tab-opener="parking">
-                        <button class="tab-button" type="button">Машиноместа<i class="icon-chevron-right"></i>
-                        </button>
-                      </div>
-                      <div class="tab-button__item" data-tab-opener="pantry">
-                        <button class="tab-button" type="button">Кладовые<i class="icon-chevron-right"></i>
-                        </button>
-                      </div>
-                    </div>
-                    <div class="tab-content" data-tab-contents>
-                      <div class="tab-content__item" data-tab="flat" data-accordions>
-                        <!-- Flat-->
-                        <form class="realty-filtres__form" name="filter-flat" data-accordion>
-                          <!-- Items-->
-                          <div class="realty-filtres__items">
-                            <div class="realty-filtres__item">
-                              <div class="form-select form-select--gray form-select--md">
-                                <div class="form-select__inner">
-                                  <div class="form-select__label">Проект</div>
-                                  <select class="j-select j-select-multiple" name="Obj[]" multiple data-placeholder="Все проекты" data-json="[{&quot;id&quot;:&quot;all&quot;,&quot;text&quot;:&quot;Все проекты&quot;,&quot;selected&quot;:true},{&quot;id&quot;:1,&quot;text&quot;:&quot;ЖК Южный&quot;,&quot;status&quot;:&quot;сдан&quot;},{&quot;id&quot;:2,&quot;text&quot;:&quot;ЖК Восточный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:3,&quot;text&quot;:&quot;ЖК Северный&quot;,&quot;status&quot;:&quot;сдан&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Южный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Восточный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Северный&quot;,&quot;status&quot;:&quot;строится&quot;}]"></select>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="realty-filtres__item">
-                              <dic class="form-rooms form-rooms--gray form-rooms--md">
-                                <div class="form-rooms__inner">
-                                  <div class="form-rooms__item">
-                                    <input class="form-rooms__input" id="rs" type="checkbox" name="room[s]" value="s">
-                                    <label class="form-rooms__label" for="rs">C</label>
-                                  </div>
-                                  <div class="form-rooms__item">
-                                    <input class="form-rooms__input" id="r1" type="checkbox" name="room[1]" value="1">
-                                    <label class="form-rooms__label" for="r1">1</label>
-                                  </div>
-                                  <div class="form-rooms__item">
-                                    <input class="form-rooms__input" id="r2" type="checkbox" name="room[2]" value="3">
-                                    <label class="form-rooms__label" for="r2">2</label>
-                                  </div>
-                                  <div class="form-rooms__item">
-                                    <input class="form-rooms__input" id="r3" type="checkbox" name="room[3]" value="3">
-                                    <label class="form-rooms__label" for="r3">3</label>
-                                  </div>
-                                </div>
-                              </dic>
-                            </div>
-                            <div class="realty-filtres__item">
-                              <div class="form-range form-range--gray form-range--md">
-                                <div class="form-range__inner">
-                                  <div class="form-range__label">Задайте стоимость, млн ₽</div>
-                                  <div class="form-range__range">
-                                    <div class="form-range__inputs">
-                                      <div class="form-range__input-item">
-                                        <div class="form-range__input-text">от</div>
-                                        <input class="form-range__input" type="text" value="2500000">
-                                      </div>
-                                      <div class="form-range__input-item">
-                                        <div class="form-range__input-text">до</div>
-                                        <input class="form-range__input" type="text" value="17500000">
-                                      </div>
-                                    </div>
-                                    <div class="form-range__base">
-                                      <input class="j-form-range-base" type="text" id="price" data-min="2500000" data-max="17500000" data-from="2500000" data-to="17500000" data-type="double" data-step="1000" data-min-interval="1000" data-validate="number_short">
-                                    </div>
-                                    <div class="form-range__output">
-                                      <input class="j-form-range-output-min" type="text" name="price[min]" tabindex="-1" readonly>
-                                      <input class="j-form-range-output-max" type="text" name="price[max]" tabindex="-1" readonly>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="realty-filtres__item">
-                              <div class="form-range form-range--gray form-range--md">
-                                <div class="form-range__inner">
-                                  <div class="form-range__label">Укажите площадь, м²</div>
-                                  <div class="form-range__range">
-                                    <div class="form-range__inputs">
-                                      <div class="form-range__input-item">
-                                        <div class="form-range__input-text">от</div>
-                                        <input class="form-range__input" type="text" value="16" name="area[min]">
-                                      </div>
-                                      <div class="form-range__input-item">
-                                        <div class="form-range__input-text">до</div>
-                                        <input class="form-range__input" type="text" value="184" name="area[max]">
-                                      </div>
-                                    </div>
-                                    <div class="form-range__base">
-                                      <input class="j-form-range-base" type="text" id="area" data-min="16" data-max="184" data-from="16" data-to="184" data-type="double" data-step="1" data-min-interval="1" data-validate="number">
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- More filtres-->
-                          <div class="realty-filtres__more acc__content" data-accordion-content>
-                            <div class="acc__content-inner" data-accordion-inner>
-                              <div class="realty-filtres__items">
-                                <div class="realty-filtres__item">
-                                  <div class="form-select form-select--gray form-select--md">
-                                    <div class="form-select__inner">
-                                      <div class="form-select__label">Проект</div>
-                                      <select class="j-select j-select-multiple" name="Obj1[]" multiple data-placeholder="Все проекты" data-json="[{&quot;id&quot;:&quot;all&quot;,&quot;text&quot;:&quot;Все проекты&quot;,&quot;selected&quot;:true},{&quot;id&quot;:1,&quot;text&quot;:&quot;ЖК Южный&quot;,&quot;status&quot;:&quot;сдан&quot;},{&quot;id&quot;:2,&quot;text&quot;:&quot;ЖК Восточный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:3,&quot;text&quot;:&quot;ЖК Северный&quot;,&quot;status&quot;:&quot;сдан&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Южный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Восточный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Северный&quot;,&quot;status&quot;:&quot;строится&quot;}]"></select>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="realty-filtres__item">
-                                  <div class="form-select form-select--gray form-select--md">
-                                    <div class="form-select__inner">
-                                      <div class="form-select__label">Проект</div>
-                                      <select class="j-select j-select-multiple" name="Obj2[]" multiple data-placeholder="Все проекты" data-json="[{&quot;id&quot;:&quot;all&quot;,&quot;text&quot;:&quot;Все проекты&quot;,&quot;selected&quot;:true},{&quot;id&quot;:1,&quot;text&quot;:&quot;ЖК Южный&quot;,&quot;status&quot;:&quot;сдан&quot;},{&quot;id&quot;:2,&quot;text&quot;:&quot;ЖК Восточный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:3,&quot;text&quot;:&quot;ЖК Северный&quot;,&quot;status&quot;:&quot;сдан&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Южный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Восточный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Северный&quot;,&quot;status&quot;:&quot;строится&quot;}]"></select>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="realty-filtres__item">
-                                  <div class="form-select form-select--gray form-select--md">
-                                    <div class="form-select__inner">
-                                      <div class="form-select__label">Проект</div>
-                                      <select class="j-select j-select-multiple" name="Obj3[]" multiple data-placeholder="Все проекты" data-json="[{&quot;id&quot;:&quot;all&quot;,&quot;text&quot;:&quot;Все проекты&quot;,&quot;selected&quot;:true},{&quot;id&quot;:1,&quot;text&quot;:&quot;ЖК Южный&quot;,&quot;status&quot;:&quot;сдан&quot;},{&quot;id&quot;:2,&quot;text&quot;:&quot;ЖК Восточный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:3,&quot;text&quot;:&quot;ЖК Северный&quot;,&quot;status&quot;:&quot;сдан&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Южный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Восточный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Северный&quot;,&quot;status&quot;:&quot;строится&quot;}]"></select>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="realty-filtres__item">
-                                  <div class="form-select form-select--gray form-select--md">
-                                    <div class="form-select__inner">
-                                      <div class="form-select__label">Проект</div>
-                                      <select class="j-select j-select-multiple" name="Obj4[]" multiple data-placeholder="Все проекты" data-json="[{&quot;id&quot;:&quot;all&quot;,&quot;text&quot;:&quot;Все проекты&quot;,&quot;selected&quot;:true},{&quot;id&quot;:1,&quot;text&quot;:&quot;ЖК Южный&quot;,&quot;status&quot;:&quot;сдан&quot;},{&quot;id&quot;:2,&quot;text&quot;:&quot;ЖК Восточный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:3,&quot;text&quot;:&quot;ЖК Северный&quot;,&quot;status&quot;:&quot;сдан&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Южный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Восточный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Северный&quot;,&quot;status&quot;:&quot;строится&quot;}]"></select>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- Controls-->
-                          <div class="realty-filtres__controls">
-                            <div class="realty-filtres__controls-more">
-                              <button class="link link-md link-dark realty-filtres__controls-button-more" type="button" data-accordion-opener><span class="link-icon"><i class="icon-plus"></i></span><span class="link-text realty-filtres__controls-button-more-open">Больше фильтров</span><span class="link-text realty-filtres__controls-button-more-close">Скрыть фильтры</span></button>
-                            </div>
-                            <div class="realty-filtres__controls-results">
-                              <button class="link link-sm link-dark realty-filtres__controls-button-reset" type="button"><span class="link-text">Очистить</span></button>
-                              <button class="btn btn-md btn-primary realty-filtres__controls-button-submit" type="submit"><span class="btn-text">Найдено 84</span>
-                              </button>
-                            </div>
-                          </div>
-                          <!-- Selected-->
-                          <div class="realty-filtres__selected">
-                            <div class="realty-filtres__selected-title">Выбрано:</div>
-                            <div class="realty-filtres__selected-items">
-                              <div class="realty-filtres__selected-item"><span class="realty-filtres__selected-name">c ценой от 16 389 000 до 81 700 000 руб</span><span class="realty-filtres__selected-close"></span></div>
-                              <div class="realty-filtres__selected-item"><span class="realty-filtres__selected-name">трехкомнатные</span><span class="realty-filtres__selected-close"></span></div>
-                              <div class="realty-filtres__selected-item"><span class="realty-filtres__selected-name">от 1 до 16 этажа</span><span class="realty-filtres__selected-close"></span></div>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                      <div class="tab-content__item" data-tab="parking" data-accordions>
-                        <!-- Flat-->
-                        <form class="realty-filtres__form" name="filter-flat" data-accordion>
-                          <!-- Items-->
-                          <div class="realty-filtres__items">
-                            <div class="realty-filtres__item">
-                              <div class="form-select form-select--gray form-select--md">
-                                <div class="form-select__inner">
-                                  <div class="form-select__label">Проект</div>
-                                  <select class="j-select j-select-multiple" name="Obj[]" multiple data-placeholder="Все проекты" data-json="[{&quot;id&quot;:&quot;all&quot;,&quot;text&quot;:&quot;Все проекты&quot;,&quot;selected&quot;:true},{&quot;id&quot;:1,&quot;text&quot;:&quot;ЖК Южный&quot;,&quot;status&quot;:&quot;сдан&quot;},{&quot;id&quot;:2,&quot;text&quot;:&quot;ЖК Восточный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:3,&quot;text&quot;:&quot;ЖК Северный&quot;,&quot;status&quot;:&quot;сдан&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Южный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Восточный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Северный&quot;,&quot;status&quot;:&quot;строится&quot;}]"></select>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="realty-filtres__item">
-                              <dic class="form-rooms form-rooms--gray form-rooms--md">
-                                <div class="form-rooms__inner">
-                                  <div class="form-rooms__item">
-                                    <input class="form-rooms__input" id="rs" type="checkbox" name="room[s]" value="s">
-                                    <label class="form-rooms__label" for="rs">C</label>
-                                  </div>
-                                  <div class="form-rooms__item">
-                                    <input class="form-rooms__input" id="r1" type="checkbox" name="room[1]" value="1">
-                                    <label class="form-rooms__label" for="r1">1</label>
-                                  </div>
-                                  <div class="form-rooms__item">
-                                    <input class="form-rooms__input" id="r2" type="checkbox" name="room[2]" value="3">
-                                    <label class="form-rooms__label" for="r2">2</label>
-                                  </div>
-                                  <div class="form-rooms__item">
-                                    <input class="form-rooms__input" id="r3" type="checkbox" name="room[3]" value="3">
-                                    <label class="form-rooms__label" for="r3">3</label>
-                                  </div>
-                                </div>
-                              </dic>
-                            </div>
-                            <div class="realty-filtres__item">
-                              <div class="form-range form-range--gray form-range--md">
-                                <div class="form-range__inner">
-                                  <div class="form-range__label">Задайте стоимость, млн ₽</div>
-                                  <div class="form-range__range">
-                                    <div class="form-range__inputs">
-                                      <div class="form-range__input-item">
-                                        <div class="form-range__input-text">от</div>
-                                        <input class="form-range__input" type="text" value="2500000">
-                                      </div>
-                                      <div class="form-range__input-item">
-                                        <div class="form-range__input-text">до</div>
-                                        <input class="form-range__input" type="text" value="17500000">
-                                      </div>
-                                    </div>
-                                    <div class="form-range__base">
-                                      <input class="j-form-range-base" type="text" id="price" data-min="2500000" data-max="17500000" data-from="2500000" data-to="17500000" data-type="double" data-step="1000" data-min-interval="1000" data-validate="number_short">
-                                    </div>
-                                    <div class="form-range__output">
-                                      <input class="j-form-range-output-min" type="text" name="price[min]" tabindex="-1" readonly>
-                                      <input class="j-form-range-output-max" type="text" name="price[max]" tabindex="-1" readonly>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="realty-filtres__item">
-                              <div class="form-range form-range--gray form-range--md">
-                                <div class="form-range__inner">
-                                  <div class="form-range__label">Укажите площадь, м²</div>
-                                  <div class="form-range__range">
-                                    <div class="form-range__inputs">
-                                      <div class="form-range__input-item">
-                                        <div class="form-range__input-text">от</div>
-                                        <input class="form-range__input" type="text" value="16" name="area[min]">
-                                      </div>
-                                      <div class="form-range__input-item">
-                                        <div class="form-range__input-text">до</div>
-                                        <input class="form-range__input" type="text" value="184" name="area[max]">
-                                      </div>
-                                    </div>
-                                    <div class="form-range__base">
-                                      <input class="j-form-range-base" type="text" id="area" data-min="16" data-max="184" data-from="16" data-to="184" data-type="double" data-step="1" data-min-interval="1" data-validate="number">
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- More filtres-->
-                          <div class="realty-filtres__more acc__content" data-accordion-content>
-                            <div class="acc__content-inner" data-accordion-inner>
-                              <div class="realty-filtres__items">
-                                <div class="realty-filtres__item">
-                                  <div class="form-select form-select--gray form-select--md">
-                                    <div class="form-select__inner">
-                                      <div class="form-select__label">Проект</div>
-                                      <select class="j-select j-select-multiple" name="Obj1[]" multiple data-placeholder="Все проекты" data-json="[{&quot;id&quot;:&quot;all&quot;,&quot;text&quot;:&quot;Все проекты&quot;,&quot;selected&quot;:true},{&quot;id&quot;:1,&quot;text&quot;:&quot;ЖК Южный&quot;,&quot;status&quot;:&quot;сдан&quot;},{&quot;id&quot;:2,&quot;text&quot;:&quot;ЖК Восточный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:3,&quot;text&quot;:&quot;ЖК Северный&quot;,&quot;status&quot;:&quot;сдан&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Южный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Восточный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Северный&quot;,&quot;status&quot;:&quot;строится&quot;}]"></select>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="realty-filtres__item">
-                                  <div class="form-select form-select--gray form-select--md">
-                                    <div class="form-select__inner">
-                                      <div class="form-select__label">Проект</div>
-                                      <select class="j-select j-select-multiple" name="Obj2[]" multiple data-placeholder="Все проекты" data-json="[{&quot;id&quot;:&quot;all&quot;,&quot;text&quot;:&quot;Все проекты&quot;,&quot;selected&quot;:true},{&quot;id&quot;:1,&quot;text&quot;:&quot;ЖК Южный&quot;,&quot;status&quot;:&quot;сдан&quot;},{&quot;id&quot;:2,&quot;text&quot;:&quot;ЖК Восточный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:3,&quot;text&quot;:&quot;ЖК Северный&quot;,&quot;status&quot;:&quot;сдан&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Южный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Восточный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Северный&quot;,&quot;status&quot;:&quot;строится&quot;}]"></select>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="realty-filtres__item">
-                                  <div class="form-select form-select--gray form-select--md">
-                                    <div class="form-select__inner">
-                                      <div class="form-select__label">Проект</div>
-                                      <select class="j-select j-select-multiple" name="Obj3[]" multiple data-placeholder="Все проекты" data-json="[{&quot;id&quot;:&quot;all&quot;,&quot;text&quot;:&quot;Все проекты&quot;,&quot;selected&quot;:true},{&quot;id&quot;:1,&quot;text&quot;:&quot;ЖК Южный&quot;,&quot;status&quot;:&quot;сдан&quot;},{&quot;id&quot;:2,&quot;text&quot;:&quot;ЖК Восточный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:3,&quot;text&quot;:&quot;ЖК Северный&quot;,&quot;status&quot;:&quot;сдан&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Южный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Восточный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Северный&quot;,&quot;status&quot;:&quot;строится&quot;}]"></select>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="realty-filtres__item">
-                                  <div class="form-select form-select--gray form-select--md">
-                                    <div class="form-select__inner">
-                                      <div class="form-select__label">Проект</div>
-                                      <select class="j-select j-select-multiple" name="Obj4[]" multiple data-placeholder="Все проекты" data-json="[{&quot;id&quot;:&quot;all&quot;,&quot;text&quot;:&quot;Все проекты&quot;,&quot;selected&quot;:true},{&quot;id&quot;:1,&quot;text&quot;:&quot;ЖК Южный&quot;,&quot;status&quot;:&quot;сдан&quot;},{&quot;id&quot;:2,&quot;text&quot;:&quot;ЖК Восточный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:3,&quot;text&quot;:&quot;ЖК Северный&quot;,&quot;status&quot;:&quot;сдан&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Южный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Восточный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Северный&quot;,&quot;status&quot;:&quot;строится&quot;}]"></select>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- Controls-->
-                          <div class="realty-filtres__controls">
-                            <div class="realty-filtres__controls-more">
-                              <button class="link link-md link-dark realty-filtres__controls-button-more" type="button" data-accordion-opener><span class="link-icon"><i class="icon-plus"></i></span><span class="link-text realty-filtres__controls-button-more-open">Больше фильтров</span><span class="link-text realty-filtres__controls-button-more-close">Скрыть фильтры</span></button>
-                            </div>
-                            <div class="realty-filtres__controls-results">
-                              <button class="link link-sm link-dark realty-filtres__controls-button-reset" type="button"><span class="link-text">Очистить</span></button>
-                              <button class="btn btn-md btn-primary realty-filtres__controls-button-submit" type="submit"><span class="btn-text">Найдено 84</span>
-                              </button>
-                            </div>
-                          </div>
-                          <!-- Selected-->
-                          <div class="realty-filtres__selected">
-                            <div class="realty-filtres__selected-title">Выбрано:</div>
-                            <div class="realty-filtres__selected-items">
-                              <div class="realty-filtres__selected-item"><span class="realty-filtres__selected-name">c ценой от 16 389 000 до 81 700 000 руб</span><span class="realty-filtres__selected-close"></span></div>
-                              <div class="realty-filtres__selected-item"><span class="realty-filtres__selected-name">трехкомнатные</span><span class="realty-filtres__selected-close"></span></div>
-                              <div class="realty-filtres__selected-item"><span class="realty-filtres__selected-name">от 1 до 16 этажа</span><span class="realty-filtres__selected-close"></span></div>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                      <div class="tab-content__item" data-tab="pantry" data-accordions>
-                        <!-- Flat-->
-                        <form class="realty-filtres__form" name="filter-flat" data-accordion>
-                          <!-- Items-->
-                          <div class="realty-filtres__items">
-                            <div class="realty-filtres__item">
-                              <div class="form-select form-select--gray form-select--md">
-                                <div class="form-select__inner">
-                                  <div class="form-select__label">Проект</div>
-                                  <select class="j-select j-select-multiple" name="Obj[]" multiple data-placeholder="Все проекты" data-json="[{&quot;id&quot;:&quot;all&quot;,&quot;text&quot;:&quot;Все проекты&quot;,&quot;selected&quot;:true},{&quot;id&quot;:1,&quot;text&quot;:&quot;ЖК Южный&quot;,&quot;status&quot;:&quot;сдан&quot;},{&quot;id&quot;:2,&quot;text&quot;:&quot;ЖК Восточный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:3,&quot;text&quot;:&quot;ЖК Северный&quot;,&quot;status&quot;:&quot;сдан&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Южный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Восточный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Северный&quot;,&quot;status&quot;:&quot;строится&quot;}]"></select>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="realty-filtres__item">
-                              <dic class="form-rooms form-rooms--gray form-rooms--md">
-                                <div class="form-rooms__inner">
-                                  <div class="form-rooms__item">
-                                    <input class="form-rooms__input" id="rs" type="checkbox" name="room[s]" value="s">
-                                    <label class="form-rooms__label" for="rs">C</label>
-                                  </div>
-                                  <div class="form-rooms__item">
-                                    <input class="form-rooms__input" id="r1" type="checkbox" name="room[1]" value="1">
-                                    <label class="form-rooms__label" for="r1">1</label>
-                                  </div>
-                                  <div class="form-rooms__item">
-                                    <input class="form-rooms__input" id="r2" type="checkbox" name="room[2]" value="3">
-                                    <label class="form-rooms__label" for="r2">2</label>
-                                  </div>
-                                  <div class="form-rooms__item">
-                                    <input class="form-rooms__input" id="r3" type="checkbox" name="room[3]" value="3">
-                                    <label class="form-rooms__label" for="r3">3</label>
-                                  </div>
-                                </div>
-                              </dic>
-                            </div>
-                            <div class="realty-filtres__item">
-                              <div class="form-range form-range--gray form-range--md">
-                                <div class="form-range__inner">
-                                  <div class="form-range__label">Задайте стоимость, млн ₽</div>
-                                  <div class="form-range__range">
-                                    <div class="form-range__inputs">
-                                      <div class="form-range__input-item">
-                                        <div class="form-range__input-text">от</div>
-                                        <input class="form-range__input" type="text" value="2500000">
-                                      </div>
-                                      <div class="form-range__input-item">
-                                        <div class="form-range__input-text">до</div>
-                                        <input class="form-range__input" type="text" value="17500000">
-                                      </div>
-                                    </div>
-                                    <div class="form-range__base">
-                                      <input class="j-form-range-base" type="text" id="price" data-min="2500000" data-max="17500000" data-from="2500000" data-to="17500000" data-type="double" data-step="1000" data-min-interval="1000" data-validate="number_short">
-                                    </div>
-                                    <div class="form-range__output">
-                                      <input class="j-form-range-output-min" type="text" name="price[min]" tabindex="-1" readonly>
-                                      <input class="j-form-range-output-max" type="text" name="price[max]" tabindex="-1" readonly>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="realty-filtres__item">
-                              <div class="form-range form-range--gray form-range--md">
-                                <div class="form-range__inner">
-                                  <div class="form-range__label">Укажите площадь, м²</div>
-                                  <div class="form-range__range">
-                                    <div class="form-range__inputs">
-                                      <div class="form-range__input-item">
-                                        <div class="form-range__input-text">от</div>
-                                        <input class="form-range__input" type="text" value="16" name="area[min]">
-                                      </div>
-                                      <div class="form-range__input-item">
-                                        <div class="form-range__input-text">до</div>
-                                        <input class="form-range__input" type="text" value="184" name="area[max]">
-                                      </div>
-                                    </div>
-                                    <div class="form-range__base">
-                                      <input class="j-form-range-base" type="text" id="area" data-min="16" data-max="184" data-from="16" data-to="184" data-type="double" data-step="1" data-min-interval="1" data-validate="number">
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- More filtres-->
-                          <div class="realty-filtres__more acc__content" data-accordion-content>
-                            <div class="acc__content-inner" data-accordion-inner>
-                              <div class="realty-filtres__items">
-                                <div class="realty-filtres__item">
-                                  <div class="form-select form-select--gray form-select--md">
-                                    <div class="form-select__inner">
-                                      <div class="form-select__label">Проект</div>
-                                      <select class="j-select j-select-multiple" name="Obj1[]" multiple data-placeholder="Все проекты" data-json="[{&quot;id&quot;:&quot;all&quot;,&quot;text&quot;:&quot;Все проекты&quot;,&quot;selected&quot;:true},{&quot;id&quot;:1,&quot;text&quot;:&quot;ЖК Южный&quot;,&quot;status&quot;:&quot;сдан&quot;},{&quot;id&quot;:2,&quot;text&quot;:&quot;ЖК Восточный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:3,&quot;text&quot;:&quot;ЖК Северный&quot;,&quot;status&quot;:&quot;сдан&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Южный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Восточный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Северный&quot;,&quot;status&quot;:&quot;строится&quot;}]"></select>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="realty-filtres__item">
-                                  <div class="form-select form-select--gray form-select--md">
-                                    <div class="form-select__inner">
-                                      <div class="form-select__label">Проект</div>
-                                      <select class="j-select j-select-multiple" name="Obj2[]" multiple data-placeholder="Все проекты" data-json="[{&quot;id&quot;:&quot;all&quot;,&quot;text&quot;:&quot;Все проекты&quot;,&quot;selected&quot;:true},{&quot;id&quot;:1,&quot;text&quot;:&quot;ЖК Южный&quot;,&quot;status&quot;:&quot;сдан&quot;},{&quot;id&quot;:2,&quot;text&quot;:&quot;ЖК Восточный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:3,&quot;text&quot;:&quot;ЖК Северный&quot;,&quot;status&quot;:&quot;сдан&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Южный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Восточный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Северный&quot;,&quot;status&quot;:&quot;строится&quot;}]"></select>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="realty-filtres__item">
-                                  <div class="form-select form-select--gray form-select--md">
-                                    <div class="form-select__inner">
-                                      <div class="form-select__label">Проект</div>
-                                      <select class="j-select j-select-multiple" name="Obj3[]" multiple data-placeholder="Все проекты" data-json="[{&quot;id&quot;:&quot;all&quot;,&quot;text&quot;:&quot;Все проекты&quot;,&quot;selected&quot;:true},{&quot;id&quot;:1,&quot;text&quot;:&quot;ЖК Южный&quot;,&quot;status&quot;:&quot;сдан&quot;},{&quot;id&quot;:2,&quot;text&quot;:&quot;ЖК Восточный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:3,&quot;text&quot;:&quot;ЖК Северный&quot;,&quot;status&quot;:&quot;сдан&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Южный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Восточный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Северный&quot;,&quot;status&quot;:&quot;строится&quot;}]"></select>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="realty-filtres__item">
-                                  <div class="form-select form-select--gray form-select--md">
-                                    <div class="form-select__inner">
-                                      <div class="form-select__label">Проект</div>
-                                      <select class="j-select j-select-multiple" name="Obj4[]" multiple data-placeholder="Все проекты" data-json="[{&quot;id&quot;:&quot;all&quot;,&quot;text&quot;:&quot;Все проекты&quot;,&quot;selected&quot;:true},{&quot;id&quot;:1,&quot;text&quot;:&quot;ЖК Южный&quot;,&quot;status&quot;:&quot;сдан&quot;},{&quot;id&quot;:2,&quot;text&quot;:&quot;ЖК Восточный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:3,&quot;text&quot;:&quot;ЖК Северный&quot;,&quot;status&quot;:&quot;сдан&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Южный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Восточный&quot;,&quot;status&quot;:&quot;строится&quot;},{&quot;id&quot;:4,&quot;text&quot;:&quot;ЖК Северный&quot;,&quot;status&quot;:&quot;строится&quot;}]"></select>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- Controls-->
-                          <div class="realty-filtres__controls">
-                            <div class="realty-filtres__controls-more">
-                              <button class="link link-md link-dark realty-filtres__controls-button-more" type="button" data-accordion-opener><span class="link-icon"><i class="icon-plus"></i></span><span class="link-text realty-filtres__controls-button-more-open">Больше фильтров</span><span class="link-text realty-filtres__controls-button-more-close">Скрыть фильтры</span></button>
-                            </div>
-                            <div class="realty-filtres__controls-results">
-                              <button class="link link-sm link-dark realty-filtres__controls-button-reset" type="button"><span class="link-text">Очистить</span></button>
-                              <button class="btn btn-md btn-primary realty-filtres__controls-button-submit" type="submit"><span class="btn-text">Найдено 84</span>
-                              </button>
-                            </div>
-                          </div>
-                          <!-- Selected-->
-                          <div class="realty-filtres__selected">
-                            <div class="realty-filtres__selected-title">Выбрано:</div>
-                            <div class="realty-filtres__selected-items">
-                              <div class="realty-filtres__selected-item"><span class="realty-filtres__selected-name">c ценой от 16 389 000 до 81 700 000 руб</span><span class="realty-filtres__selected-close"></span></div>
-                              <div class="realty-filtres__selected-item"><span class="realty-filtres__selected-name">трехкомнатные</span><span class="realty-filtres__selected-close"></span></div>
-                              <div class="realty-filtres__selected-item"><span class="realty-filtres__selected-name">от 1 до 16 этажа</span><span class="realty-filtres__selected-close"></span></div>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div class="separator separator--logo" data-anim="fadeIn"><img class="separator__image" loading="lazy" src="assets/img/icons/separator-1.svg" alt="Разделитель"></div>
-        <section class="section-md">
-          <div class="container">
             <div class="desc-top" data-anim="fadeInTop">
               <div class="desc-top__head">
                 <h2 class="desc-top__head-title">О проекте</h2>
@@ -770,7 +294,7 @@
                 <div class="desc-top__footer-text">
                   <p><b>«Волна»</b> — комфортный жилой комплекс в близи центра города, находящийся в экологически чистой зоне.</p>
                   <p>Район богат инфраструктурой — больницы, поликлиники, образовательные учреждения, крупные торговые центры. В проекте появятся собственные детские сады и школы.</p>
-                  <p>Рядом с жилым комплексом располагается лесопарк. Гулять там можно круглый год.</p><a class="link link-primary link-md _icon-right" href="/test-ajax.html" data-popup="bottom" data-popup-ajax>
+                  <p>Рядом с жилым комплексом располагается лесопарк. Гулять там можно круглый год.</p><a class="link link-primary link-md _icon-right" href="#info" data-popup="bottom">
                     <div class="link-text">Читать подробнее</div>
                     <div class="link-icon"><i class="icon-chevron-right"></i>
                     </div></a>
@@ -817,758 +341,6 @@
                   </div>
                 </div>
                 <div class="swiper-pagination"></div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="section-md">
-          <div class="container">
-            <div class="heading heading--dark heading--lg heading--section" data-anim="fadeInTop">
-              <div class="heading__left">
-                <h2 class="heading__title">Для вас</h2>
-                <div class="heading__subtitle">То, что будет вдохновлять каждый день</div>
-              </div>
-            </div>
-            <div class="advantages-images-grid__items" data-anim="fadeInTop">
-                      <div class="col">
-                        <div class="advantages-images-grid__item">
-                          <div class="advantages-images-grid__image"><img loading="lazy" src="assets/img/image-place-3.jpg" alt="Для вас"></div>
-                          <div class="advantages-images-grid__title">Озеро рядом</div>
-                          <div class="advantages-images-grid__content">
-                            <div class="advantages-images-grid__content-title-wrap">
-                              <div class="advantages-images-grid__content-title">Озеро рядом</div>
-                              <div class="advantages-images-grid__content-icon"><i class="icon-wind-01"></i>
-                              </div>
-                            </div>
-                            <div class="advantages-images-grid__content-subtitle">Двор в Волне оснащен самым современным оборудованием, от площадок для малышейдо воркаут зон для спортивных ребят</div><a class="advantages-images-grid__content-link" href="/test-ajax.html" data-popup="bottom" data-popup-ajax>Подробнее<i class="icon-chevron-right"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="advantages-images-grid__item">
-                          <div class="advantages-images-grid__image"><img loading="lazy" src="assets/img/image-place-2.jpg" alt="Для вас"></div>
-                          <div class="advantages-images-grid__title">Зеленая территория</div>
-                          <div class="advantages-images-grid__content">
-                            <div class="advantages-images-grid__content-title-wrap">
-                              <div class="advantages-images-grid__content-title">Зеленая территория</div>
-                              <div class="advantages-images-grid__content-icon"><i class="icon-wind-01"></i>
-                              </div>
-                            </div>
-                            <div class="advantages-images-grid__content-subtitle">Двор в Волне оснащен самым современным оборудованием, от площадок для малышейдо воркаут зон для спортивных ребят</div><a class="advantages-images-grid__content-link" href="/test-ajax.html" data-popup="bottom" data-popup-ajax>Подробнее<i class="icon-chevron-right"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="advantages-images-grid__item">
-                          <div class="advantages-images-grid__image"><img loading="lazy" src="assets/img/image-place-4.jpg" alt="Для вас"></div>
-                          <div class="advantages-images-grid__title">Дизайнерские<br>входные группы</div>
-                          <div class="advantages-images-grid__content">
-                            <div class="advantages-images-grid__content-title-wrap">
-                              <div class="advantages-images-grid__content-title">Дизайнерские<br>входные группы</div>
-                              <div class="advantages-images-grid__content-icon"><i class="icon-wind-01"></i>
-                              </div>
-                            </div>
-                            <div class="advantages-images-grid__content-subtitle">Двор в Волне оснащен самым современным оборудованием, от площадок для малышейдо воркаут зон для спортивных ребят</div><a class="advantages-images-grid__content-link" href="/test-ajax.html" data-popup="bottom" data-popup-ajax>Подробнее<i class="icon-chevron-right"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="advantages-images-grid__item">
-                          <div class="advantages-images-grid__image"><img loading="lazy" src="assets/img/image-place-1.jpg" alt="Для вас"></div>
-                          <div class="advantages-images-grid__title">Места для<br>вечернего отдыха</div>
-                          <div class="advantages-images-grid__content">
-                            <div class="advantages-images-grid__content-title-wrap">
-                              <div class="advantages-images-grid__content-title">Места для<br>вечернего отдыха</div>
-                              <div class="advantages-images-grid__content-icon"><i class="icon-wind-01"></i>
-                              </div>
-                            </div>
-                            <div class="advantages-images-grid__content-subtitle">Двор в Волне оснащен самым современным оборудованием, от площадок для малышейдо воркаут зон для спортивных ребят</div><a class="advantages-images-grid__content-link" href="/test-ajax.html" data-popup="bottom" data-popup-ajax>Подробнее<i class="icon-chevron-right"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="advantages-images-grid__item">
-                          <div class="advantages-images-grid__image"><img loading="lazy" src="assets/img/image-place-6.jpg" alt="Для вас"></div>
-                          <div class="advantages-images-grid__title">Закрытая, охраняемся<br>территория</div>
-                          <div class="advantages-images-grid__content">
-                            <div class="advantages-images-grid__content-title-wrap">
-                              <div class="advantages-images-grid__content-title">Закрытая, охраняемся<br>территория</div>
-                              <div class="advantages-images-grid__content-icon"><i class="icon-wind-01"></i>
-                              </div>
-                            </div>
-                            <div class="advantages-images-grid__content-subtitle">Двор в Волне оснащен самым современным оборудованием, от площадок для малышейдо воркаут зон для спортивных ребят</div><a class="advantages-images-grid__content-link" href="/test-ajax.html" data-popup="bottom" data-popup-ajax>Подробнее<i class="icon-chevron-right"></i></a>
-                          </div>
-                        </div>
-                      </div>
-            </div>
-          </div>
-        </section>
-        <section class="section-md section--top infrastructure__section waves-top waves-bottom" data-anim="fadeInTop">
-          <div class="container">
-            <div class="heading heading--light heading--lg heading--section" data-anim="fadeInTop">
-              <div class="heading__left">
-                <h2 class="heading__title">Всё рядом</h2>
-                <div class="heading__subtitle">Ключевая инфраструктура в доступности</div>
-              </div>
-            </div>
-            <!-- Anonse-->
-            <div class="infrastructure__anonse" data-anim="fadeInTop">
-              <div class="swiper-container infrastructure__anonse-slider _button-light _button-lg _button-left">
-                <div class="swiper">
-                  <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                              <div class="places-card">
-                                <div class="places-card__image"><img loading="lazy" src="assets/img/image-near-1.jpg" alt="ВСЕ, ЧТО НУЖНО РЯДОМ"></div>
-                                <div class="places-card__content">
-                                  <div class="places-card__title">Детский сад</div>
-                                  <div class="places-card__range">
-                                    <div class="places-card__range-name">150 м</div>
-                                    <div class="places-card__range-right">
-                                      <div class="places-card__range-radius"></div>
-                                      <div class="places-card__range-radius"></div>
-                                      <div class="places-card__range-radius"></div>
-                                      <div class="places-card__range-radius"></div>
-                                      <div class="places-card__range-icon"><img loading="lazy" src="assets/img/image-person.png" alt="#"></div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="swiper-slide">
-                              <div class="places-card">
-                                <div class="places-card__image"><img loading="lazy" src="assets/img/image-near-2.jpg" alt="ВСЕ, ЧТО НУЖНО РЯДОМ"></div>
-                                <div class="places-card__content">
-                                  <div class="places-card__title">Новая школа</div>
-                                  <div class="places-card__range">
-                                    <div class="places-card__range-name">50 м</div>
-                                    <div class="places-card__range-right">
-                                      <div class="places-card__range-radius"></div>
-                                      <div class="places-card__range-radius"></div>
-                                      <div class="places-card__range-radius"></div>
-                                      <div class="places-card__range-radius"></div>
-                                      <div class="places-card__range-icon"><img loading="lazy" src="assets/img/image-person.png" alt="#"></div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="swiper-slide">
-                              <div class="places-card">
-                                <div class="places-card__image"><img loading="lazy" src="assets/img/image-near-3.jpg" alt="ВСЕ, ЧТО НУЖНО РЯДОМ"></div>
-                                <div class="places-card__content">
-                                  <div class="places-card__title">Школа искусств</div>
-                                  <div class="places-card__range">
-                                    <div class="places-card__range-name">350 м</div>
-                                    <div class="places-card__range-right">
-                                      <div class="places-card__range-radius"></div>
-                                      <div class="places-card__range-radius"></div>
-                                      <div class="places-card__range-radius"></div>
-                                      <div class="places-card__range-radius"></div>
-                                      <div class="places-card__range-icon"><img loading="lazy" src="assets/img/image-person.png" alt="#"></div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="swiper-slide">
-                              <div class="places-card">
-                                <div class="places-card__image"><img loading="lazy" src="assets/img/image-near-4.jpg" alt="ВСЕ, ЧТО НУЖНО РЯДОМ"></div>
-                                <div class="places-card__content">
-                                  <div class="places-card__title">Спорт школа</div>
-                                  <div class="places-card__range">
-                                    <div class="places-card__range-name">250 м</div>
-                                    <div class="places-card__range-right">
-                                      <div class="places-card__range-radius"></div>
-                                      <div class="places-card__range-radius"></div>
-                                      <div class="places-card__range-radius"></div>
-                                      <div class="places-card__range-radius"></div>
-                                      <div class="places-card__range-icon"><img loading="lazy" src="assets/img/image-person.png" alt="#"></div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="swiper-slide">
-                              <div class="places-card">
-                                <div class="places-card__image"><img loading="lazy" src="assets/img/image-near-5.jpg" alt="ВСЕ, ЧТО НУЖНО РЯДОМ"></div>
-                                <div class="places-card__content">
-                                  <div class="places-card__title">Трц</div>
-                                  <div class="places-card__range">
-                                    <div class="places-card__range-name">50 м</div>
-                                    <div class="places-card__range-right">
-                                      <div class="places-card__range-radius"></div>
-                                      <div class="places-card__range-radius"></div>
-                                      <div class="places-card__range-radius"></div>
-                                      <div class="places-card__range-radius"></div>
-                                      <div class="places-card__range-icon"><img loading="lazy" src="assets/img/image-person.png" alt="#"></div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="swiper-slide">
-                              <div class="places-card">
-                                <div class="places-card__image"><img loading="lazy" src="assets/img/image-near-5.jpg" alt="ВСЕ, ЧТО НУЖНО РЯДОМ"></div>
-                                <div class="places-card__content">
-                                  <div class="places-card__title">Трц</div>
-                                  <div class="places-card__range">
-                                    <div class="places-card__range-name">50 м</div>
-                                    <div class="places-card__range-right">
-                                      <div class="places-card__range-radius"></div>
-                                      <div class="places-card__range-radius"></div>
-                                      <div class="places-card__range-radius"></div>
-                                      <div class="places-card__range-radius"></div>
-                                      <div class="places-card__range-icon"><img loading="lazy" src="assets/img/image-person.png" alt="#"></div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="swiper-slide">
-                              <div class="places-card">
-                                <div class="places-card__image"><img loading="lazy" src="assets/img/image-near-5.jpg" alt="ВСЕ, ЧТО НУЖНО РЯДОМ"></div>
-                                <div class="places-card__content">
-                                  <div class="places-card__title">Трц</div>
-                                  <div class="places-card__range">
-                                    <div class="places-card__range-name">50 м</div>
-                                    <div class="places-card__range-right">
-                                      <div class="places-card__range-radius"></div>
-                                      <div class="places-card__range-radius"></div>
-                                      <div class="places-card__range-radius"></div>
-                                      <div class="places-card__range-radius"></div>
-                                      <div class="places-card__range-icon"><img loading="lazy" src="assets/img/image-person.png" alt="#"></div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Map-->
-          <div class="container-wide" data-anim="fadeInTop">
-            <div class="infrastructure__map j-yandex-map-root">
-              <div class="infrastructure-legend j-yandex-map-infrastructure">
-                <div class="infrastructure-legend__inner container">
-                  <ul class="infrastructure-legend__list j-map-filter"></ul>
-                  <div class="infrastructure-filter">
-                    <button class="infrastructure-filter__agree j-map-filter-apply is-hidden"><span class="link__text">Применить</span></button>
-                    <button class="infrastructure-filter__reset j-map-filter-reset is-active"><span class="infrastructure-filter__reset-text-desktop">Все объекты<i class="icon-circle"></i></span><span class="infrastructure-filter__reset-text-mobile">Сбросить</span></button>
-                  </div>
-                </div>
-                <div class="infrastructure-toggle">
-                  <button class="infrastructure-toggle__btn j-yandex-map-filter-toggle"><span class="infrastructure-toggle__text">Объекты на карте</span><span class="infrastructure-toggle__icon"><i class="icon-settings-04"></i><i class="icon-x-close"></i></span></button>
-                </div>
-              </div>
-              <div class="yandex-map__wrapper j-yandex-map" data-json="{&quot;data&quot;:{&quot;name&quot;:&quot;infrastructure&quot;,&quot;zoom&quot;:15,&quot;center&quot;:[&quot;55.857078&quot;,&quot;48.576758&quot;],&quot;zoomMargin&quot;:100,&quot;customZoomControl&quot;:true,&quot;markers&quot;:[{&quot;coords&quot;:[&quot;55.857078&quot;,&quot;48.576758&quot;],&quot;id&quot;:0,&quot;icon&quot;:&quot;../../assets/img/image-main-1.jpg&quot;,&quot;zIndex&quot;:2,&quot;modifyClass&quot;:&quot;point&quot;,&quot;type&quot;:&quot;point&quot;,&quot;not_cluster&quot;:true,&quot;name&quot;:&quot;ШИРОТА&quot;,&quot;typeName&quot;:&quot;ЖК&quot;,&quot;size&quot;:{&quot;width&quot;:&quot;60&quot;,&quot;height&quot;:&quot;60&quot;},&quot;balloon&quot;:{&quot;image&quot;:&quot;../../assets/img/image-main-1.jpg&quot;,&quot;type&quot;:&quot;ЖК&quot;,&quot;title&quot;:&quot;Эко Гармония&quot;}},{&quot;id&quot;:1,&quot;coords&quot;:[&quot;55.860181&quot;,&quot;48.571171&quot;],&quot;iconType&quot;:&quot;shops&quot;,&quot;icon&quot;:&quot;icon-shopping-cart-01&quot;,&quot;type&quot;:&quot;shops&quot;,&quot;not_cluster&quot;:true,&quot;zIndex&quot;:1,&quot;modifyClass&quot;:&quot;infrastructure&quot;,&quot;name&quot;:&quot;Магазины&quot;,&quot;size&quot;:{&quot;width&quot;:&quot;44&quot;,&quot;height&quot;:&quot;44&quot;},&quot;balloon&quot;:{&quot;title&quot;:&quot;Магнит&quot;,&quot;text&quot;:&quot;улица Выучейского, 31&quot;}},{&quot;id&quot;:2,&quot;coords&quot;:[&quot;55.854416&quot;,&quot;48.574683&quot;],&quot;iconType&quot;:&quot;shops&quot;,&quot;icon&quot;:&quot;icon-shopping-cart-01&quot;,&quot;type&quot;:&quot;shops&quot;,&quot;not_cluster&quot;:true,&quot;zIndex&quot;:1,&quot;modifyClass&quot;:&quot;infrastructure&quot;,&quot;name&quot;:&quot;Магазины&quot;,&quot;size&quot;:{&quot;width&quot;:&quot;44&quot;,&quot;height&quot;:&quot;44&quot;},&quot;balloon&quot;:{&quot;title&quot;:&quot;Магнит&quot;,&quot;text&quot;:&quot;улица Выучейского, 31&quot;}},{&quot;id&quot;:3,&quot;coords&quot;:[&quot;55.856593&quot;,&quot;48.575168&quot;],&quot;iconType&quot;:&quot;sсhool&quot;,&quot;icon&quot;:&quot;icon-book-open-01&quot;,&quot;type&quot;:&quot;sсhool&quot;,&quot;not_cluster&quot;:true,&quot;zIndex&quot;:1,&quot;modifyClass&quot;:&quot;infrastructure&quot;,&quot;name&quot;:&quot;Школы&quot;,&quot;size&quot;:{&quot;width&quot;:&quot;44&quot;,&quot;height&quot;:&quot;44&quot;},&quot;balloon&quot;:{&quot;title&quot;:&quot;Школа № 22&quot;,&quot;text&quot;:&quot;улица Выучейского, 31&quot;}},{&quot;id&quot;:4,&quot;coords&quot;:[&quot;55.857387&quot;,&quot;48.575824&quot;],&quot;iconType&quot;:&quot;sсhool&quot;,&quot;icon&quot;:&quot;icon-book-open-01&quot;,&quot;type&quot;:&quot;sсhool&quot;,&quot;not_cluster&quot;:true,&quot;zIndex&quot;:1,&quot;modifyClass&quot;:&quot;infrastructure&quot;,&quot;name&quot;:&quot;Школы&quot;,&quot;size&quot;:{&quot;width&quot;:&quot;44&quot;,&quot;height&quot;:&quot;44&quot;},&quot;balloon&quot;:{&quot;title&quot;:&quot;Школа № 22&quot;,&quot;text&quot;:&quot;улица Выучейского, 31&quot;}},{&quot;id&quot;:5,&quot;coords&quot;:[&quot;55.856326&quot;,&quot;48.577405&quot;],&quot;iconType&quot;:&quot;drugstore&quot;,&quot;icon&quot;:&quot;icon-medical-cross&quot;,&quot;type&quot;:&quot;drugstore&quot;,&quot;not_cluster&quot;:true,&quot;zIndex&quot;:1,&quot;modifyClass&quot;:&quot;infrastructure&quot;,&quot;name&quot;:&quot;Здоровье&quot;,&quot;size&quot;:{&quot;width&quot;:&quot;44&quot;,&quot;height&quot;:&quot;44&quot;},&quot;balloon&quot;:{&quot;title&quot;:&quot;Инномед&quot;,&quot;text&quot;:&quot;улица Выучейского, 31&quot;}},{&quot;id&quot;:6,&quot;coords&quot;:[&quot;55.858468&quot;,&quot;48.573623&quot;],&quot;iconType&quot;:&quot;drugstore&quot;,&quot;icon&quot;:&quot;icon-medical-cross&quot;,&quot;type&quot;:&quot;drugstore&quot;,&quot;not_cluster&quot;:true,&quot;zIndex&quot;:1,&quot;modifyClass&quot;:&quot;infrastructure&quot;,&quot;name&quot;:&quot;Здоровье&quot;,&quot;size&quot;:{&quot;width&quot;:&quot;44&quot;,&quot;height&quot;:&quot;44&quot;},&quot;balloon&quot;:{&quot;title&quot;:&quot;Поликлиника № 2&quot;,&quot;text&quot;:&quot;улица Выучейского, 31&quot;}},{&quot;id&quot;:7,&quot;coords&quot;:[&quot;55.852824&quot;,&quot;48.566868&quot;],&quot;iconType&quot;:&quot;relax&quot;,&quot;icon&quot;:&quot;icon-route&quot;,&quot;type&quot;:&quot;relax&quot;,&quot;not_cluster&quot;:true,&quot;zIndex&quot;:1,&quot;modifyClass&quot;:&quot;infrastructure&quot;,&quot;name&quot;:&quot;Отдых&quot;,&quot;size&quot;:{&quot;width&quot;:&quot;44&quot;,&quot;height&quot;:&quot;44&quot;},&quot;balloon&quot;:{&quot;title&quot;:&quot;МАДОУ детский сад № 117&quot;,&quot;text&quot;:&quot;улица Выучейского, 31&quot;}}],&quot;circles&quot;:[{&quot;center&quot;:[&quot;55.857078&quot;,&quot;48.576758&quot;],&quot;radius&quot;:700,&quot;fillOpacity&quot;:0.1,&quot;fillColor&quot;:&quot;#98B4EB&quot;,&quot;strokeColor&quot;:&quot;#98B4EB&quot;,&quot;strokeOpacity&quot;:0.1,&quot;strokeWidth&quot;:1,&quot;strokeStyle&quot;:&quot;solid&quot;}]}}" data-lazy-enter="map:init">
-                <div class="yandex-map__overlay _white">
-                  <div class="yandex-map__overlay-icon"><i class="icon-marker-pin-01"></i>
-                  </div>
-                  <div class="yandex-map__overlay-title">Нажмите<br>чтобы открыть<br>карту</div>
-                </div>
-                <div class="infrastructure-route"><a class="infrastructure-route__button" href="https://yandex.ru/maps/-/CCUSVQGHOD" target="_blank" data-tooltip="Проложить маршрут" data-tooltip-position="left"><i class="icon-route infrastructure-route__icon"></i></a></div>
-                <div class="yandex-map__container">
-                  <div class="yandex-map__base is-loading" id="yandex-map-infrastructure"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="section-md">
-          <div class="container">
-            <div class="heading heading--dark heading--lg heading--section" data-anim="fadeInTop">
-              <div class="heading__left">
-                <h2 class="heading__title">Планировки</h2>
-                <div class="heading__subtitle">28 вариантов планировок</div>
-              </div>
-              <div class="heading__right">
-                <div class="heading__right-text">Большой выбор продуманных планировок от студий до трёхкомнатных квартир</div>
-              </div>
-            </div>
-            <div class="tab tab--light" data-tabs data-anim="fadeIn">
-              <!-- Buttons-->
-              <div class="tab-buttons" data-tab-buttons>
-                <div class="tab-button__item" data-tab-opener="1">
-                  <button class="tab-button _icon" type="button">Студия<i class="icon-chevron-right"></i>
-                  </button>
-                </div>
-                <div class="tab-button__item" data-tab-opener="2">
-                  <button class="tab-button _icon" type="button">Однокомнатная<i class="icon-chevron-right"></i>
-                  </button>
-                </div>
-                <div class="tab-button__item" data-tab-opener="3">
-                  <button class="tab-button _icon" type="button">Двухкомнатная<i class="icon-chevron-right"></i>
-                  </button>
-                </div>
-                <div class="tab-button__item" data-tab-opener="4">
-                  <button class="tab-button _icon" type="button">Трехкомнатная<i class="icon-chevron-right"></i>
-                  </button>
-                </div>
-              </div>
-              <!-- Ccontent-->
-              <div class="tab-content" data-tab-contents data-anim="fadeInTop">
-                <!-- Item-->
-                <div class="tab-content__item" data-tab="1">
-                  <div class="tab-content__item-inner">
-                    <div class="swiper-container _button-secondary _button-center-out realty-layouts-slider__slider">
-                      <div class="swiper">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <div class="realty-layouts-slider__item">
-                              <div class="realty-layouts-slider__item-inner">
-                                <div class="realty-layouts-slider__image-wrap" data-gallery-zoom>
-                                  <div class="realty-layouts-slider__compass" style="transform: rotate(75deg)"><img class="realty-layouts-slider__compass-icon" loading="lazy" src="assets/img/icons/ic-compass.svg" alt="Compass"></div><img class="realty-layouts-slider__image" data-gallery-zoom-item loading="lazy" src="assets/img/image-plan-1.png" alt="Планировка">
-                                  <div class="realty-layouts-slider__zoom-button">
-                                    <button class="btn btn-sm btn-gray _icon" data-gallery-zoom-trigger=""><span class="btn-icon"><i class="icon-maximize-01"></i></span>
-                                    </button>
-                                  </div>
-                                </div>
-                                <div class="realty-layouts-slider__content">
-                                  <div class="realty-layouts-slider__title-top">Sh_S</div>
-                                  <h3 class="realty-layouts-slider__title">Студия</h3>
-                                  <div class="realty-layouts-slider__price">3 870 924 ₽ - 3 870 924 ₽</div>
-                                  <div class="realty-layouts-slider__area">28,9 м² - 30,2 м²</div>
-                                  <ul class="realty-layouts-slider__specs-list">
-                                    <li class="realty-layouts-slider__specs-item">Этажи:  2 - 5</li>
-                                    <li class="realty-layouts-slider__specs-item">Большая кухня гостиная</li>
-                                    <li class="realty-layouts-slider__specs-item">Ниша под шкаф купе</li>
-                                  </ul>
-                                  <div class="realty-layouts-slider__button"><a class="btn btn-md btn-primary _icon-right" href="#"><span class="btn-icon"><i class="icon-arrow-narrow-right"></i></span><span class="btn-text">14 вариантов</span></a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="realty-layouts-slider__item">
-                              <div class="realty-layouts-slider__item-inner">
-                                <div class="realty-layouts-slider__image-wrap" data-gallery-zoom>
-                                  <div class="realty-layouts-slider__compass" style="transform: rotate(75deg)"><img class="realty-layouts-slider__compass-icon" loading="lazy" src="assets/img/icons/ic-compass.svg" alt="Compass"></div><img class="realty-layouts-slider__image" data-gallery-zoom-item loading="lazy" src="assets/img/image-plan-1.png" alt="Планировка">
-                                  <div class="realty-layouts-slider__zoom-button">
-                                    <button class="btn btn-sm btn-gray _icon" data-gallery-zoom-trigger=""><span class="btn-icon"><i class="icon-maximize-01"></i></span>
-                                    </button>
-                                  </div>
-                                </div>
-                                <div class="realty-layouts-slider__content">
-                                  <div class="realty-layouts-slider__title-top">Sh_S</div>
-                                  <h3 class="realty-layouts-slider__title">Студия</h3>
-                                  <div class="realty-layouts-slider__price">3 870 924 ₽ - 3 870 924 ₽</div>
-                                  <div class="realty-layouts-slider__area">28,9 м² - 30,2 м²</div>
-                                  <ul class="realty-layouts-slider__specs-list">
-                                    <li class="realty-layouts-slider__specs-item">Этажи:  2 - 5</li>
-                                    <li class="realty-layouts-slider__specs-item">Большая кухня гостиная</li>
-                                    <li class="realty-layouts-slider__specs-item">Ниша под шкаф купе</li>
-                                  </ul>
-                                  <div class="realty-layouts-slider__button"><a class="btn btn-md btn-primary _icon-right" href="#"><span class="btn-icon"><i class="icon-arrow-narrow-right"></i></span><span class="btn-text">14 вариантов</span></a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="realty-layouts-slider__item">
-                              <div class="realty-layouts-slider__item-inner">
-                                <div class="realty-layouts-slider__image-wrap" data-gallery-zoom>
-                                  <div class="realty-layouts-slider__compass" style="transform: rotate(75deg)"><img class="realty-layouts-slider__compass-icon" loading="lazy" src="assets/img/icons/ic-compass.svg" alt="Compass"></div><img class="realty-layouts-slider__image" data-gallery-zoom-item loading="lazy" src="assets/img/image-plan-1.png" alt="Планировка">
-                                  <div class="realty-layouts-slider__zoom-button">
-                                    <button class="btn btn-sm btn-gray _icon" data-gallery-zoom-trigger=""><span class="btn-icon"><i class="icon-maximize-01"></i></span>
-                                    </button>
-                                  </div>
-                                </div>
-                                <div class="realty-layouts-slider__content">
-                                  <div class="realty-layouts-slider__title-top">Sh_S</div>
-                                  <h3 class="realty-layouts-slider__title">Студия</h3>
-                                  <div class="realty-layouts-slider__price">3 870 924 ₽ - 3 870 924 ₽</div>
-                                  <div class="realty-layouts-slider__area">28,9 м² - 30,2 м²</div>
-                                  <ul class="realty-layouts-slider__specs-list">
-                                    <li class="realty-layouts-slider__specs-item">Этажи:  2 - 5</li>
-                                    <li class="realty-layouts-slider__specs-item">Большая кухня гостиная</li>
-                                    <li class="realty-layouts-slider__specs-item">Ниша под шкаф купе</li>
-                                  </ul>
-                                  <div class="realty-layouts-slider__button"><a class="btn btn-md btn-primary _icon-right" href="#"><span class="btn-icon"><i class="icon-arrow-narrow-right"></i></span><span class="btn-text">14 вариантов</span></a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="realty-layouts-slider__item">
-                              <div class="realty-layouts-slider__item-inner">
-                                <div class="realty-layouts-slider__image-wrap" data-gallery-zoom>
-                                  <div class="realty-layouts-slider__compass" style="transform: rotate(75deg)"><img class="realty-layouts-slider__compass-icon" loading="lazy" src="assets/img/icons/ic-compass.svg" alt="Compass"></div><img class="realty-layouts-slider__image" data-gallery-zoom-item loading="lazy" src="assets/img/image-plan-1.png" alt="Планировка">
-                                  <div class="realty-layouts-slider__zoom-button">
-                                    <button class="btn btn-sm btn-gray _icon" data-gallery-zoom-trigger=""><span class="btn-icon"><i class="icon-maximize-01"></i></span>
-                                    </button>
-                                  </div>
-                                </div>
-                                <div class="realty-layouts-slider__content">
-                                  <div class="realty-layouts-slider__title-top">Sh_S</div>
-                                  <h3 class="realty-layouts-slider__title">Студия</h3>
-                                  <div class="realty-layouts-slider__price">3 870 924 ₽ - 3 870 924 ₽</div>
-                                  <div class="realty-layouts-slider__area">28,9 м² - 30,2 м²</div>
-                                  <ul class="realty-layouts-slider__specs-list">
-                                    <li class="realty-layouts-slider__specs-item">Этажи:  2 - 5</li>
-                                    <li class="realty-layouts-slider__specs-item">Большая кухня гостиная</li>
-                                    <li class="realty-layouts-slider__specs-item">Ниша под шкаф купе</li>
-                                  </ul>
-                                  <div class="realty-layouts-slider__button"><a class="btn btn-md btn-primary _icon-right" href="#"><span class="btn-icon"><i class="icon-arrow-narrow-right"></i></span><span class="btn-text">14 вариантов</span></a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Item-->
-                <div class="tab-content__item" data-tab="2">
-                  <div class="tab-content__item-inner">
-                    <div class="swiper-container _button-secondary _button-center-out realty-layouts-slider__slider">
-                      <div class="swiper">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <div class="realty-layouts-slider__item">
-                              <div class="realty-layouts-slider__item-inner">
-                                <div class="realty-layouts-slider__image-wrap" data-gallery-zoom>
-                                  <div class="realty-layouts-slider__compass" style="transform: rotate(75deg)"><img class="realty-layouts-slider__compass-icon" loading="lazy" src="assets/img/icons/ic-compass.svg" alt="Compass"></div><img class="realty-layouts-slider__image" data-gallery-zoom-item loading="lazy" src="assets/img/image-plan-1.png" alt="Планировка">
-                                  <div class="realty-layouts-slider__zoom-button">
-                                    <button class="btn btn-sm btn-gray _icon" data-gallery-zoom-trigger=""><span class="btn-icon"><i class="icon-maximize-01"></i></span>
-                                    </button>
-                                  </div>
-                                </div>
-                                <div class="realty-layouts-slider__content">
-                                  <div class="realty-layouts-slider__title-top">Sh_S</div>
-                                  <h3 class="realty-layouts-slider__title">Студия</h3>
-                                  <div class="realty-layouts-slider__price">3 870 924 ₽ - 3 870 924 ₽</div>
-                                  <div class="realty-layouts-slider__area">28,9 м² - 30,2 м²</div>
-                                  <ul class="realty-layouts-slider__specs-list">
-                                    <li class="realty-layouts-slider__specs-item">Этажи:  2 - 5</li>
-                                    <li class="realty-layouts-slider__specs-item">Большая кухня гостиная</li>
-                                    <li class="realty-layouts-slider__specs-item">Ниша под шкаф купе</li>
-                                  </ul>
-                                  <div class="realty-layouts-slider__button"><a class="btn btn-md btn-primary _icon-right" href="#"><span class="btn-icon"><i class="icon-arrow-narrow-right"></i></span><span class="btn-text">14 вариантов</span></a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="realty-layouts-slider__item">
-                              <div class="realty-layouts-slider__item-inner">
-                                <div class="realty-layouts-slider__image-wrap" data-gallery-zoom>
-                                  <div class="realty-layouts-slider__compass" style="transform: rotate(75deg)"><img class="realty-layouts-slider__compass-icon" loading="lazy" src="assets/img/icons/ic-compass.svg" alt="Compass"></div><img class="realty-layouts-slider__image" data-gallery-zoom-item loading="lazy" src="assets/img/image-plan-1.png" alt="Планировка">
-                                  <div class="realty-layouts-slider__zoom-button">
-                                    <button class="btn btn-sm btn-gray _icon" data-gallery-zoom-trigger=""><span class="btn-icon"><i class="icon-maximize-01"></i></span>
-                                    </button>
-                                  </div>
-                                </div>
-                                <div class="realty-layouts-slider__content">
-                                  <div class="realty-layouts-slider__title-top">Sh_S</div>
-                                  <h3 class="realty-layouts-slider__title">Студия</h3>
-                                  <div class="realty-layouts-slider__price">3 870 924 ₽ - 3 870 924 ₽</div>
-                                  <div class="realty-layouts-slider__area">28,9 м² - 30,2 м²</div>
-                                  <ul class="realty-layouts-slider__specs-list">
-                                    <li class="realty-layouts-slider__specs-item">Этажи:  2 - 5</li>
-                                    <li class="realty-layouts-slider__specs-item">Большая кухня гостиная</li>
-                                    <li class="realty-layouts-slider__specs-item">Ниша под шкаф купе</li>
-                                  </ul>
-                                  <div class="realty-layouts-slider__button"><a class="btn btn-md btn-primary _icon-right" href="#"><span class="btn-icon"><i class="icon-arrow-narrow-right"></i></span><span class="btn-text">14 вариантов</span></a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="realty-layouts-slider__item">
-                              <div class="realty-layouts-slider__item-inner">
-                                <div class="realty-layouts-slider__image-wrap" data-gallery-zoom>
-                                  <div class="realty-layouts-slider__compass" style="transform: rotate(75deg)"><img class="realty-layouts-slider__compass-icon" loading="lazy" src="assets/img/icons/ic-compass.svg" alt="Compass"></div><img class="realty-layouts-slider__image" data-gallery-zoom-item loading="lazy" src="assets/img/image-plan-1.png" alt="Планировка">
-                                  <div class="realty-layouts-slider__zoom-button">
-                                    <button class="btn btn-sm btn-gray _icon" data-gallery-zoom-trigger=""><span class="btn-icon"><i class="icon-maximize-01"></i></span>
-                                    </button>
-                                  </div>
-                                </div>
-                                <div class="realty-layouts-slider__content">
-                                  <div class="realty-layouts-slider__title-top">Sh_S</div>
-                                  <h3 class="realty-layouts-slider__title">Студия</h3>
-                                  <div class="realty-layouts-slider__price">3 870 924 ₽ - 3 870 924 ₽</div>
-                                  <div class="realty-layouts-slider__area">28,9 м² - 30,2 м²</div>
-                                  <ul class="realty-layouts-slider__specs-list">
-                                    <li class="realty-layouts-slider__specs-item">Этажи:  2 - 5</li>
-                                    <li class="realty-layouts-slider__specs-item">Большая кухня гостиная</li>
-                                    <li class="realty-layouts-slider__specs-item">Ниша под шкаф купе</li>
-                                  </ul>
-                                  <div class="realty-layouts-slider__button"><a class="btn btn-md btn-primary _icon-right" href="#"><span class="btn-icon"><i class="icon-arrow-narrow-right"></i></span><span class="btn-text">14 вариантов</span></a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="realty-layouts-slider__item">
-                              <div class="realty-layouts-slider__item-inner">
-                                <div class="realty-layouts-slider__image-wrap" data-gallery-zoom>
-                                  <div class="realty-layouts-slider__compass" style="transform: rotate(75deg)"><img class="realty-layouts-slider__compass-icon" loading="lazy" src="assets/img/icons/ic-compass.svg" alt="Compass"></div><img class="realty-layouts-slider__image" data-gallery-zoom-item loading="lazy" src="assets/img/image-plan-1.png" alt="Планировка">
-                                  <div class="realty-layouts-slider__zoom-button">
-                                    <button class="btn btn-sm btn-gray _icon" data-gallery-zoom-trigger=""><span class="btn-icon"><i class="icon-maximize-01"></i></span>
-                                    </button>
-                                  </div>
-                                </div>
-                                <div class="realty-layouts-slider__content">
-                                  <div class="realty-layouts-slider__title-top">Sh_S</div>
-                                  <h3 class="realty-layouts-slider__title">Студия</h3>
-                                  <div class="realty-layouts-slider__price">3 870 924 ₽ - 3 870 924 ₽</div>
-                                  <div class="realty-layouts-slider__area">28,9 м² - 30,2 м²</div>
-                                  <ul class="realty-layouts-slider__specs-list">
-                                    <li class="realty-layouts-slider__specs-item">Этажи:  2 - 5</li>
-                                    <li class="realty-layouts-slider__specs-item">Большая кухня гостиная</li>
-                                    <li class="realty-layouts-slider__specs-item">Ниша под шкаф купе</li>
-                                  </ul>
-                                  <div class="realty-layouts-slider__button"><a class="btn btn-md btn-primary _icon-right" href="#"><span class="btn-icon"><i class="icon-arrow-narrow-right"></i></span><span class="btn-text">14 вариантов</span></a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Item-->
-                <div class="tab-content__item" data-tab="3">
-                  <div class="tab-content__item-inner">
-                    <div class="swiper-container _button-secondary _button-center-out realty-layouts-slider__slider">
-                      <div class="swiper">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <div class="realty-layouts-slider__item">
-                              <div class="realty-layouts-slider__item-inner">
-                                <div class="realty-layouts-slider__image-wrap" data-gallery-zoom>
-                                  <div class="realty-layouts-slider__compass" style="transform: rotate(75deg)"><img class="realty-layouts-slider__compass-icon" loading="lazy" src="assets/img/icons/ic-compass.svg" alt="Compass"></div><img class="realty-layouts-slider__image" data-gallery-zoom-item loading="lazy" src="assets/img/image-plan-1.png" alt="Планировка">
-                                  <div class="realty-layouts-slider__zoom-button">
-                                    <button class="btn btn-sm btn-gray _icon" data-gallery-zoom-trigger=""><span class="btn-icon"><i class="icon-maximize-01"></i></span>
-                                    </button>
-                                  </div>
-                                </div>
-                                <div class="realty-layouts-slider__content">
-                                  <div class="realty-layouts-slider__title-top">Sh_S</div>
-                                  <h3 class="realty-layouts-slider__title">Студия</h3>
-                                  <div class="realty-layouts-slider__price">3 870 924 ₽ - 3 870 924 ₽</div>
-                                  <div class="realty-layouts-slider__area">28,9 м² - 30,2 м²</div>
-                                  <ul class="realty-layouts-slider__specs-list">
-                                    <li class="realty-layouts-slider__specs-item">Этажи:  2 - 5</li>
-                                    <li class="realty-layouts-slider__specs-item">Большая кухня гостиная</li>
-                                    <li class="realty-layouts-slider__specs-item">Ниша под шкаф купе</li>
-                                  </ul>
-                                  <div class="realty-layouts-slider__button"><a class="btn btn-md btn-primary _icon-right" href="#"><span class="btn-icon"><i class="icon-arrow-narrow-right"></i></span><span class="btn-text">14 вариантов</span></a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="realty-layouts-slider__item">
-                              <div class="realty-layouts-slider__item-inner">
-                                <div class="realty-layouts-slider__image-wrap" data-gallery-zoom>
-                                  <div class="realty-layouts-slider__compass" style="transform: rotate(75deg)"><img class="realty-layouts-slider__compass-icon" loading="lazy" src="assets/img/icons/ic-compass.svg" alt="Compass"></div><img class="realty-layouts-slider__image" data-gallery-zoom-item loading="lazy" src="assets/img/image-plan-1.png" alt="Планировка">
-                                  <div class="realty-layouts-slider__zoom-button">
-                                    <button class="btn btn-sm btn-gray _icon" data-gallery-zoom-trigger=""><span class="btn-icon"><i class="icon-maximize-01"></i></span>
-                                    </button>
-                                  </div>
-                                </div>
-                                <div class="realty-layouts-slider__content">
-                                  <div class="realty-layouts-slider__title-top">Sh_S</div>
-                                  <h3 class="realty-layouts-slider__title">Студия</h3>
-                                  <div class="realty-layouts-slider__price">3 870 924 ₽ - 3 870 924 ₽</div>
-                                  <div class="realty-layouts-slider__area">28,9 м² - 30,2 м²</div>
-                                  <ul class="realty-layouts-slider__specs-list">
-                                    <li class="realty-layouts-slider__specs-item">Этажи:  2 - 5</li>
-                                    <li class="realty-layouts-slider__specs-item">Большая кухня гостиная</li>
-                                    <li class="realty-layouts-slider__specs-item">Ниша под шкаф купе</li>
-                                  </ul>
-                                  <div class="realty-layouts-slider__button"><a class="btn btn-md btn-primary _icon-right" href="#"><span class="btn-icon"><i class="icon-arrow-narrow-right"></i></span><span class="btn-text">14 вариантов</span></a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="realty-layouts-slider__item">
-                              <div class="realty-layouts-slider__item-inner">
-                                <div class="realty-layouts-slider__image-wrap" data-gallery-zoom>
-                                  <div class="realty-layouts-slider__compass" style="transform: rotate(75deg)"><img class="realty-layouts-slider__compass-icon" loading="lazy" src="assets/img/icons/ic-compass.svg" alt="Compass"></div><img class="realty-layouts-slider__image" data-gallery-zoom-item loading="lazy" src="assets/img/image-plan-1.png" alt="Планировка">
-                                  <div class="realty-layouts-slider__zoom-button">
-                                    <button class="btn btn-sm btn-gray _icon" data-gallery-zoom-trigger=""><span class="btn-icon"><i class="icon-maximize-01"></i></span>
-                                    </button>
-                                  </div>
-                                </div>
-                                <div class="realty-layouts-slider__content">
-                                  <div class="realty-layouts-slider__title-top">Sh_S</div>
-                                  <h3 class="realty-layouts-slider__title">Студия</h3>
-                                  <div class="realty-layouts-slider__price">3 870 924 ₽ - 3 870 924 ₽</div>
-                                  <div class="realty-layouts-slider__area">28,9 м² - 30,2 м²</div>
-                                  <ul class="realty-layouts-slider__specs-list">
-                                    <li class="realty-layouts-slider__specs-item">Этажи:  2 - 5</li>
-                                    <li class="realty-layouts-slider__specs-item">Большая кухня гостиная</li>
-                                    <li class="realty-layouts-slider__specs-item">Ниша под шкаф купе</li>
-                                  </ul>
-                                  <div class="realty-layouts-slider__button"><a class="btn btn-md btn-primary _icon-right" href="#"><span class="btn-icon"><i class="icon-arrow-narrow-right"></i></span><span class="btn-text">14 вариантов</span></a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="realty-layouts-slider__item">
-                              <div class="realty-layouts-slider__item-inner">
-                                <div class="realty-layouts-slider__image-wrap" data-gallery-zoom>
-                                  <div class="realty-layouts-slider__compass" style="transform: rotate(75deg)"><img class="realty-layouts-slider__compass-icon" loading="lazy" src="assets/img/icons/ic-compass.svg" alt="Compass"></div><img class="realty-layouts-slider__image" data-gallery-zoom-item loading="lazy" src="assets/img/image-plan-1.png" alt="Планировка">
-                                  <div class="realty-layouts-slider__zoom-button">
-                                    <button class="btn btn-sm btn-gray _icon" data-gallery-zoom-trigger=""><span class="btn-icon"><i class="icon-maximize-01"></i></span>
-                                    </button>
-                                  </div>
-                                </div>
-                                <div class="realty-layouts-slider__content">
-                                  <div class="realty-layouts-slider__title-top">Sh_S</div>
-                                  <h3 class="realty-layouts-slider__title">Студия</h3>
-                                  <div class="realty-layouts-slider__price">3 870 924 ₽ - 3 870 924 ₽</div>
-                                  <div class="realty-layouts-slider__area">28,9 м² - 30,2 м²</div>
-                                  <ul class="realty-layouts-slider__specs-list">
-                                    <li class="realty-layouts-slider__specs-item">Этажи:  2 - 5</li>
-                                    <li class="realty-layouts-slider__specs-item">Большая кухня гостиная</li>
-                                    <li class="realty-layouts-slider__specs-item">Ниша под шкаф купе</li>
-                                  </ul>
-                                  <div class="realty-layouts-slider__button"><a class="btn btn-md btn-primary _icon-right" href="#"><span class="btn-icon"><i class="icon-arrow-narrow-right"></i></span><span class="btn-text">14 вариантов</span></a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Item-->
-                <div class="tab-content__item" data-tab="4">
-                  <div class="tab-content__item-inner">
-                    <div class="swiper-container _button-secondary _button-center-out realty-layouts-slider__slider">
-                      <div class="swiper">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <div class="realty-layouts-slider__item">
-                              <div class="realty-layouts-slider__item-inner">
-                                <div class="realty-layouts-slider__image-wrap" data-gallery-zoom>
-                                  <div class="realty-layouts-slider__compass" style="transform: rotate(75deg)"><img class="realty-layouts-slider__compass-icon" loading="lazy" src="assets/img/icons/ic-compass.svg" alt="Compass"></div><img class="realty-layouts-slider__image" data-gallery-zoom-item loading="lazy" src="assets/img/image-plan-1.png" alt="Планировка">
-                                  <div class="realty-layouts-slider__zoom-button">
-                                    <button class="btn btn-sm btn-gray _icon" data-gallery-zoom-trigger=""><span class="btn-icon"><i class="icon-maximize-01"></i></span>
-                                    </button>
-                                  </div>
-                                </div>
-                                <div class="realty-layouts-slider__content">
-                                  <div class="realty-layouts-slider__title-top">Sh_S</div>
-                                  <h3 class="realty-layouts-slider__title">Студия</h3>
-                                  <div class="realty-layouts-slider__price">3 870 924 ₽ - 3 870 924 ₽</div>
-                                  <div class="realty-layouts-slider__area">28,9 м² - 30,2 м²</div>
-                                  <ul class="realty-layouts-slider__specs-list">
-                                    <li class="realty-layouts-slider__specs-item">Этажи:  2 - 5</li>
-                                    <li class="realty-layouts-slider__specs-item">Большая кухня гостиная</li>
-                                    <li class="realty-layouts-slider__specs-item">Ниша под шкаф купе</li>
-                                  </ul>
-                                  <div class="realty-layouts-slider__button"><a class="btn btn-md btn-primary _icon-right" href="#"><span class="btn-icon"><i class="icon-arrow-narrow-right"></i></span><span class="btn-text">14 вариантов</span></a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="realty-layouts-slider__item">
-                              <div class="realty-layouts-slider__item-inner">
-                                <div class="realty-layouts-slider__image-wrap" data-gallery-zoom>
-                                  <div class="realty-layouts-slider__compass" style="transform: rotate(75deg)"><img class="realty-layouts-slider__compass-icon" loading="lazy" src="assets/img/icons/ic-compass.svg" alt="Compass"></div><img class="realty-layouts-slider__image" data-gallery-zoom-item loading="lazy" src="assets/img/image-plan-1.png" alt="Планировка">
-                                  <div class="realty-layouts-slider__zoom-button">
-                                    <button class="btn btn-sm btn-gray _icon" data-gallery-zoom-trigger=""><span class="btn-icon"><i class="icon-maximize-01"></i></span>
-                                    </button>
-                                  </div>
-                                </div>
-                                <div class="realty-layouts-slider__content">
-                                  <div class="realty-layouts-slider__title-top">Sh_S</div>
-                                  <h3 class="realty-layouts-slider__title">Студия</h3>
-                                  <div class="realty-layouts-slider__price">3 870 924 ₽ - 3 870 924 ₽</div>
-                                  <div class="realty-layouts-slider__area">28,9 м² - 30,2 м²</div>
-                                  <ul class="realty-layouts-slider__specs-list">
-                                    <li class="realty-layouts-slider__specs-item">Этажи:  2 - 5</li>
-                                    <li class="realty-layouts-slider__specs-item">Большая кухня гостиная</li>
-                                    <li class="realty-layouts-slider__specs-item">Ниша под шкаф купе</li>
-                                  </ul>
-                                  <div class="realty-layouts-slider__button"><a class="btn btn-md btn-primary _icon-right" href="#"><span class="btn-icon"><i class="icon-arrow-narrow-right"></i></span><span class="btn-text">14 вариантов</span></a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="realty-layouts-slider__item">
-                              <div class="realty-layouts-slider__item-inner">
-                                <div class="realty-layouts-slider__image-wrap" data-gallery-zoom>
-                                  <div class="realty-layouts-slider__compass" style="transform: rotate(75deg)"><img class="realty-layouts-slider__compass-icon" loading="lazy" src="assets/img/icons/ic-compass.svg" alt="Compass"></div><img class="realty-layouts-slider__image" data-gallery-zoom-item loading="lazy" src="assets/img/image-plan-1.png" alt="Планировка">
-                                  <div class="realty-layouts-slider__zoom-button">
-                                    <button class="btn btn-sm btn-gray _icon" data-gallery-zoom-trigger=""><span class="btn-icon"><i class="icon-maximize-01"></i></span>
-                                    </button>
-                                  </div>
-                                </div>
-                                <div class="realty-layouts-slider__content">
-                                  <div class="realty-layouts-slider__title-top">Sh_S</div>
-                                  <h3 class="realty-layouts-slider__title">Студия</h3>
-                                  <div class="realty-layouts-slider__price">3 870 924 ₽ - 3 870 924 ₽</div>
-                                  <div class="realty-layouts-slider__area">28,9 м² - 30,2 м²</div>
-                                  <ul class="realty-layouts-slider__specs-list">
-                                    <li class="realty-layouts-slider__specs-item">Этажи:  2 - 5</li>
-                                    <li class="realty-layouts-slider__specs-item">Большая кухня гостиная</li>
-                                    <li class="realty-layouts-slider__specs-item">Ниша под шкаф купе</li>
-                                  </ul>
-                                  <div class="realty-layouts-slider__button"><a class="btn btn-md btn-primary _icon-right" href="#"><span class="btn-icon"><i class="icon-arrow-narrow-right"></i></span><span class="btn-text">14 вариантов</span></a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="realty-layouts-slider__item">
-                              <div class="realty-layouts-slider__item-inner">
-                                <div class="realty-layouts-slider__image-wrap" data-gallery-zoom>
-                                  <div class="realty-layouts-slider__compass" style="transform: rotate(75deg)"><img class="realty-layouts-slider__compass-icon" loading="lazy" src="assets/img/icons/ic-compass.svg" alt="Compass"></div><img class="realty-layouts-slider__image" data-gallery-zoom-item loading="lazy" src="assets/img/image-plan-1.png" alt="Планировка">
-                                  <div class="realty-layouts-slider__zoom-button">
-                                    <button class="btn btn-sm btn-gray _icon" data-gallery-zoom-trigger=""><span class="btn-icon"><i class="icon-maximize-01"></i></span>
-                                    </button>
-                                  </div>
-                                </div>
-                                <div class="realty-layouts-slider__content">
-                                  <div class="realty-layouts-slider__title-top">Sh_S</div>
-                                  <h3 class="realty-layouts-slider__title">Студия</h3>
-                                  <div class="realty-layouts-slider__price">3 870 924 ₽ - 3 870 924 ₽</div>
-                                  <div class="realty-layouts-slider__area">28,9 м² - 30,2 м²</div>
-                                  <ul class="realty-layouts-slider__specs-list">
-                                    <li class="realty-layouts-slider__specs-item">Этажи:  2 - 5</li>
-                                    <li class="realty-layouts-slider__specs-item">Большая кухня гостиная</li>
-                                    <li class="realty-layouts-slider__specs-item">Ниша под шкаф купе</li>
-                                  </ul>
-                                  <div class="realty-layouts-slider__button"><a class="btn btn-md btn-primary _icon-right" href="#"><span class="btn-icon"><i class="icon-arrow-narrow-right"></i></span><span class="btn-text">14 вариантов</span></a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -2351,74 +1123,6 @@
                     </div>
           </div>
         </section>
-        <section class="section-xs">
-          <div class="container">
-            <div class="cards-doc-links__links" data-anim="fadeIn"><a class="cards-doc-links__link" href="#">
-                <div class="cards-doc-links__link-title-wrap">
-                  <div class="cards-doc-links__link-title-icon"><i class="icon-file-attachment-05"></i>
-                  </div>
-                  <h3 class="cards-doc-links__link-title">Проектная декларация на наш.дом.рф</h3>
-                </div>
-                <div class="cards-doc-links__link-icon"><i class="icon-link-03"></i>
-                </div></a><a class="cards-doc-links__link" href="#">
-                <div class="cards-doc-links__link-title-wrap">
-                  <div class="cards-doc-links__link-title-icon"><i class="icon-file-attachment-05"></i>
-                  </div>
-                  <h3 class="cards-doc-links__link-title">Скачать декларацию в .pdf формате</h3>
-                </div>
-                <div class="cards-doc-links__link-icon"><i class="icon-download-cloud-02"></i>
-                </div></a></div>
-          </div>
-        </section>
-        <section class="section-md action-horizontal action-form__section waves-top" data-anim="fadeInTop">
-          <div class="action-form__image"><img src="assets/img/image-place-8.jpg" alt="У вас остались вопросы?"></div>
-          <div class="action-form__container container" data-anim="fadeIn">
-            <div class="action-form__content">
-              <div class="heading heading--light heading--md heading--block">
-                <div class="heading__left">
-                  <div class="heading__top">Обратная связь</div>
-                  <h2 class="heading__title">У вас остались <br>вопросы?</h2>
-                </div>
-              </div>
-              <div class="action-form__form">
-                <div class="form form--row">
-                  <form class="form-form" action="#" data-validate>
-                    <div class="form-groups">
-                              <div class="form-group">
-                                <div class="form-input form-input--dark form-input--sm">
-                                  <div class="form-input__inner">
-                                    <input class="form-input__input" type="text" name="name">
-                                    <div class="form-input__label">Имя *</div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="form-group">
-                                <div class="form-input form-input--dark form-input--sm">
-                                  <div class="form-input__inner">
-                                    <input class="form-input__input" type="tel" name="phone" minlength="16" required>
-                                    <div class="form-input__label">Телефон *</div>
-                                  </div>
-                                </div>
-                              </div>
-                    </div>
-                    <div class="form-submit">
-                      <button class="btn btn-md btn-primary form-submit__btn btn--border _icon-right" type="submit"><span class="btn-icon"><i class="icon-arrow-narrow-right"></i></span><span class="btn-text">Связаться</span>
-                      </button>
-                    </div>
-                    <div class="form-policy">
-                              <label class="form-checkbox form-checkbox--privacy form-checkbox--white">
-                                <input class="visually-hidden" type="checkbox" name="agreement" checked required>
-                                <div class="form-checkbox__icon"><i class="icon-check"></i>
-                                </div><span class="form-checkbox__text">Нажимая на кнопку, вы даете согласие на обработку своих<a href="#" target="_blank"> персональных&nbsp;данных</a></span>
-                              </label>
-                              <div class="messages"></div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
     </div>
     <!-- Footer logo left-->
@@ -2577,6 +1281,144 @@
             <div class="popup-message__close">
               <button class="btn btn-md btn-danger" data-popup-dismiss=""><span class="btn-text">Вернуться</span>
               </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Popup: Информация-->
+    <!-- Popup: Информация-->
+    <div class="popup popup--bottom popup--info mfp-hide" id="info">
+      <div class="popup-content">
+        <div class="container">
+          <div class="popup-info">
+            <div class="tab tab--light popup-info__tabs" data-tabs>
+              <div class="tab-buttons" data-tab-buttons>
+                <div class="tab-button__item" data-tab-opener="1">
+                  <button class="tab-button _icon" type="button">Квартиры с террасами<i class="icon-chevron-right"></i>
+                  </button>
+                </div>
+                <div class="tab-button__item" data-tab-opener="2">
+                  <button class="tab-button _icon" type="button">Квартиры-хайфлэты<i class="icon-chevron-right"></i>
+                  </button>
+                </div>
+                <div class="tab-button__item" data-tab-opener="3">
+                  <button class="tab-button _icon" type="button">Уникальные квартиры<i class="icon-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="tab-content" data-tab-contents>
+                <div class="tab-content__item" data-tab="1">
+                  <div class="popup-info__slider">
+                    <div class="swiper-container slider-view-1 _button-light _button-right-in _size-md" data-slider>
+                      <div class="swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="swiper-slide__inner"><img loading="lazy" src="assets/img/image-main-1.jpg" alt="#"></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="swiper-slide__inner"><img loading="lazy" src="assets/img/image-main-1.jpg" alt="#"></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="swiper-slide__inner"><img loading="lazy" src="assets/img/image-main-1.jpg" alt="#"></div>
+                          </div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popup-info__title">Лэйбл Реконструкция и техническое перевооружение электроприводных КС Газопровода НВ ГПЗ-Парабель-Кузбасс</div>
+                  <div class="popup-info__image"><img loading="lazy" src="assets/img/image-main-2.jpg" alt="#"></div>
+                  <div class="popup-info__text text-content">Были проведены работы по монтажу вентфасада, сконструированы  и установлены железобетонный фундамент и каналы, проведены системы  водоснабжения и канализация, выполнена внутренняя и наружная отделка.</div>
+                  <div class="popup-info__columns cols cols--2-auto">
+                    <div class="col">
+                      <div class="text-content">
+                        <p>Реализация строительных проектов в нефтегазовой отрасли - одно из стратегических направлений деятельности KFS-GROUP.</p>
+                        <p>Команда высококвалифицированных специалистов, имеющих большой опыт строительства нефтегазовых объектов, успешная реализация масштабных проектов, значительные производственные возможности – все это позволяет KFS-GROUP претендовать на лидирующие позиции в сфере нефтегазового, энергетического строительства.</p>
+                        <hr class="line">
+                        <p>Мы реализовали целый ряд стратегически значимых проектов для развития нефтегазового комплекса и укрепления энергетической мощи России</p>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="text-content">
+                        <div class="text-semibold text-display-sm mb-3">Виды работ:</div>
+                        <ul class="list-circle">
+                          <li>Строительство нефти- и газопроводов</li>
+                          <li>Монтаж оперативного узла учета нефти</li>
+                          <li>Монтаж блока подготовки и распределения топливного газа</li>
+                          <li>Монтаж сооружений системы сжатого воздуха и азота</li>
+                          <li>Монтаж химико-аналитической лаборатории</li>
+                          <li>Мостовые переходы через водные преграды</li>
+                          <li>Строительство и обслуживание автозимников 1 категории</li>
+                          <li>Устройство свайных оснований, ростверков, монтаж опорных конструкций</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popup-info__bottom">
+                    <ul>
+                      <li><span>Регион:</span><span>Томская область</span></li>
+                      <li><span>Заказчик:</span><span>ЗАО «Стройтрансгаз»</span></li>
+                      <li><span>Сроки реализации:</span><span>19.09.2013 – 23.06.2014</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tab-content__item" data-tab="2">
+                  <div class="popup-info__slider">
+                    <div class="swiper-container slider-view-1 _button-light _button-right-in _size-md" data-slider>
+                      <div class="swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="swiper-slide__inner"><img loading="lazy" src="assets/img/image-main-1.jpg" alt="#"></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="swiper-slide__inner"><img loading="lazy" src="assets/img/image-main-1.jpg" alt="#"></div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="swiper-slide__inner"><img loading="lazy" src="assets/img/image-main-1.jpg" alt="#"></div>
+                          </div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popup-info__title">Лэйбл Реконструкция и техническое перевооружение электроприводных КС Газопровода НВ ГПЗ-Парабель-Кузбасс</div>
+                  <div class="popup-info__image"><img loading="lazy" src="assets/img/image-main-2.jpg" alt="#"></div>
+                  <div class="popup-info__text text-content">Были проведены работы по монтажу вентфасада, сконструированы  и установлены железобетонный фундамент и каналы, проведены системы  водоснабжения и канализация, выполнена внутренняя и наружная отделка.</div>
+                  <div class="popup-info__columns cols cols--2-auto">
+                    <div class="col">
+                      <div class="text-content">
+                        <p>Реализация строительных проектов в нефтегазовой отрасли - одно из стратегических направлений деятельности KFS-GROUP.</p>
+                        <p>Команда высококвалифицированных специалистов, имеющих большой опыт строительства нефтегазовых объектов, успешная реализация масштабных проектов, значительные производственные возможности – все это позволяет KFS-GROUP претендовать на лидирующие позиции в сфере нефтегазового, энергетического строительства.</p>
+                        <hr class="line">
+                        <p>Мы реализовали целый ряд стратегически значимых проектов для развития нефтегазового комплекса и укрепления энергетической мощи России</p>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="text-content">
+                        <div class="text-semibold text-display-sm mb-3">Виды работ:</div>
+                        <ul class="list-circle">
+                          <li>Строительство нефти- и газопроводов</li>
+                          <li>Монтаж оперативного узла учета нефти</li>
+                          <li>Монтаж блока подготовки и распределения топливного газа</li>
+                          <li>Монтаж сооружений системы сжатого воздуха и азота</li>
+                          <li>Монтаж химико-аналитической лаборатории</li>
+                          <li>Мостовые переходы через водные преграды</li>
+                          <li>Строительство и обслуживание автозимников 1 категории</li>
+                          <li>Устройство свайных оснований, ростверков, монтаж опорных конструкций</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popup-info__bottom">
+                    <ul>
+                      <li><span>Регион:</span><span>Томская область</span></li>
+                      <li><span>Заказчик:</span><span>ЗАО «Стройтрансгаз»</span></li>
+                      <li><span>Сроки реализации:</span><span>19.09.2013 – 23.06.2014</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
